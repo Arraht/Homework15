@@ -1,11 +1,8 @@
 package Service.action;
 
+import Service.transport.general.Transport;
+
 public interface Check {
-    public void updateTyre();
-    default public void checkEngine() {
-        System.out.println("\tНет двигателя!");
-    }
-    default public void checkTrailer() {
-        System.out.println("\tНет прицепа!");
+    default void check(Transport transport) {
     }
 }

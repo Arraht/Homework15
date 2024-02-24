@@ -8,7 +8,12 @@ public class Car extends Transport implements Check {
         super(modelName, wheelsCount);
     }
 
-    public void checkEngine() {
+    public void check(Transport transport) {
+        for (int i = 0; i < transport.getWheelsCount(); i++) {
+            System.out.print("\tМеняем покрышку");
+            System.out.print(" № " + (i + 1) + " у " + transport.getModelName());
+            System.out.println();
+        }
         System.out.println("\tПроверяем двигатель");
     }
 }

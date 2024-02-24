@@ -10,9 +10,7 @@ public class Transport implements Check {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
-    public void updateTyre() {
-        System.out.print("\tМеняем покрышку" );
-    }
+
     public String getModelName() {
         return modelName;
     }
