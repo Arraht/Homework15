@@ -9,11 +9,7 @@ public class Car extends Transport implements Check {
     }
 
     public void check(Transport transport) {
-        for (int i = 0; i < transport.getWheelsCount(); i++) {
-            System.out.print("\tМеняем покрышку");
-            System.out.print(" № " + (i + 1) + " у " + transport.getModelName());
-            System.out.println();
-        }
+        updateTyre(transport);
         System.out.println("\tПроверяем двигатель");
     }
 }
