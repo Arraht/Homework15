@@ -9,7 +9,7 @@ public class Truck extends Transport implements Check {
     }
 
     public void check(Transport transport) {
-        updateTyre(transport);
+        super.check(transport);
         System.out.println("\tПроверяем двигатель");
         System.out.println("\tПроверяем прицеп");
     }

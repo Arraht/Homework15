@@ -2,7 +2,7 @@ package Service.transport.general;
 
 import Service.action.Check;
 
-public abstract class Transport implements Check {
+public class Transport implements Check {
     private String modelName;
     private int wheelsCount;
 
@@ -11,9 +11,7 @@ public abstract class Transport implements Check {
         this.wheelsCount = wheelsCount;
     }
 
-    public abstract void check(Transport transport);
-
-    public void updateTyre(Transport transport) {
+    public void check(Transport transport){
         for (int i = 0; i < transport.getWheelsCount(); i++) {
             System.out.print("\tМеняем покрышку");
             System.out.print(" № " + (i + 1) + " у " + transport.getModelName());

@@ -11,6 +11,6 @@ public class Bicycle extends Transport implements Check {
     }
 
     public void check(Transport transport) {
-       updateTyre(transport);
+      super.check(transport);
     }
 }
